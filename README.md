@@ -8,4 +8,5 @@ Written in Python 3.6.4.
 
 ####Change-log
 1.0. - Initial version
+
 1.1. - Changed splitter from simple '. ' to regex which significantly increases sentence detection accuracy.
