@@ -1,10 +1,10 @@
 Statistics
 
-Sentences processed: 3175
+Sentences processed: 3174
 Minimum sentence size: 4
-Mean sentence length: 23.481889763779527
-Median sentence length: 21
-Standard deviation: 13.797467287441583
+Mean sentence length: 23.49243856332703
+Median sentence length: 21.0
+Standard deviation: 13.769949496917492
 
 ---
-Machete version 1.0. Written by Tom Wallace - tomwallace1990@gmail.com
+Machete version 1.1. Written by Tom Wallace - tomwallace1990@gmail.com
