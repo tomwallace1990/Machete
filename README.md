@@ -8,6 +8,8 @@ Written in Python 3.6.4.
 
 #### Change-log
 
-1.0. - Initial version
+1.0. - Initial version.
 
 1.1. - Changed splitter from simple '. ' to regex which significantly increases sentence detection accuracy.
+
+1.2. - Changed splitter regex to increase accuracy and parse non-English unicode characters (which occur in authors names). New regex '(?<!\b\p{Lu}\.)(?<=\.|\?|\!)\s+(?=\p{Lu}|"|‘|\'|“)' should be near optimal.
