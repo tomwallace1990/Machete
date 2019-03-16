@@ -25,7 +25,7 @@ The same text may result in slightly different output depending on if .docx or .
 This software is open source and is provided for free, but is offered with no warranty or support.
 
 #Version
-1.1.
+1.3.
 Tested under Windows 10 and Windows 7.
 Written in Python 3.6.4.
 

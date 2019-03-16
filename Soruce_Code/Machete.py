@@ -19,7 +19,7 @@ layout = [[sg.Text('Please select your document and output folder...')],
 	[sg.Text('Output folder:', size=(13, 1)), sg.InputText('.'), sg.FolderBrowse()],
 	[sg.Text('Minimum sentence size: ', size=(18, 1)), sg.InputText('4', size=(4,1))],      
 	[sg.Submit(button_text='Generate', size=(10, 1)), sg.Cancel(size=(10, 1))],
-	[sg.Text('T. Wallace, v1.2.', size=(60, 1), justification='right')]]    
+	[sg.Text('T. Wallace, v1.3.', size=(60, 1), justification='right')]]    
 
 window = sg.Window('Machete').Layout(layout)  
 
@@ -58,7 +58,7 @@ try:
 
 		splitlist=[]
 		for string in text:
-			splitstring = re.split(r'(?<!\b\p{Lu}\.)(?<=\.|\?|\!)\s+(?=\p{Lu}|"|‘|\'|“)', string)
+			splitstring = re.split(r'(?<!\b\p{Lu}\.)(?<!St.)(?<=\.|\?|\!)\s+(?=\p{Lu}|"|‘|\'|“)', string)
 			splitlist.append(splitstring)
 
 		flat_list = [item for sublist in splitlist for item in sublist]
@@ -101,7 +101,7 @@ try:
 			f.write(sd_str)
 			f.write('\n')
 			f.write('---\n')
-			f.write('Machete version 1.2. Written by Tom Wallace - tomwallace1990@gmail.com')
+			f.write('Machete version 1.3. Written by Tom Wallace - tomwallace1990@gmail.com')
 		f.close()
 		
 		output = output_path + '/Machete_results.csv'
